@@ -14090,7 +14090,16 @@ font-family: 'Montserrat'
 	height:570px;
 	
   }
-
+  .imgprefieren{
+	width:500px ;
+	height:570px;
+	
+  }
+  .imgcursos{
+	width:770px ;
+	height:380px;
+	
+  }
   .espacios{
 	margin: 0px;
 	padding: 0px;
@@ -14111,9 +14120,50 @@ font-family: 'Montserrat'
 	text-align: justify;
   }
 
+  .centrarcur {
+	display: flex;
+	justify-content: center; /* Centra horizontalmente */
+	align-items: center; /* Centra verticalmente */
+	text-align: justify;
+	border: 10px solid #ffffff;
+	box-shadow: 0 0 35px rgba(0, 0, 0, 0.13);
+  }
+
   .black {
 	color:#000000 !important
   }
   .griz {
 	color:#b7b7b7 !important
+  }
+  @media (max-width: 480px) {
+	.imgprefieren {
+	  width: 100%; /* O un ancho específico menor, por ejemplo 300px */
+	  height: auto; /* Mantiene la proporción de la imagen */
+	}
+  }
+  @media (min-width: 481px) and (max-width: 1024px) {
+	.imgprefieren {
+	  width: 80%; /* Ajusta este valor según necesites */
+	  height: auto; /* Mantiene la proporción */
+	  display: block;
+	  margin: auto;
+	}
+  }
+  @media (max-width: 480px) {
+	.imgcursos {
+	  width: 100%; /* Ajusta al ancho del contenedor */
+	  height: auto; /* Mantiene la proporción */
+	  display: block;
+	  margin: auto;
+	}
+  }
+  
+  /* Media Query para tablets */
+  @media (min-width: 481px) and (max-width: 1024px) {
+	.imgcursos {
+	  width: 80%; /* Ajusta este valor según necesites, por ejemplo al 80% del contenedor */
+	  height: auto; /* Mantiene la proporción */
+	  display: block;
+	  margin: auto;
+	}
   }
